@@ -8,10 +8,10 @@ import StripePaymentForm from "@/components/StripePaymentForm";
 import PayPalButton from "@/components/PayPalButton";
 
 const serviceOptions = [
-  { id: "birth", name: "Birth Doula Package", price: 1200, description: "Complete prenatal, birth, and postpartum support" },
-  { id: "postpartum", name: "Postpartum Support", price: 600, description: "4 weeks of postpartum care and guidance" },
+  { id: "birth", name: "Birth Doula Package", price: 0, description: "Complete prenatal, birth, and postpartum support" },
+  { id: "postpartum", name: "Postpartum Support", price: 0, description: "4 weeks of postpartum care and guidance" },
   { id: "consultation", name: "Initial Consultation", price: 0, description: "Free 30-minute discovery call" },
-  { id: "deposit", name: "Service Deposit", price: 300, description: "Reserve your spot with a deposit" },
+  { id: "deposit", name: "Service Deposit", price: 0, description: "Reserve your spot with a deposit" },
 ];
 
 const Payment = () => {
