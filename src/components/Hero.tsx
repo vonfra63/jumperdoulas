@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, Calendar } from "lucide-react";
 import heroImage from "@/assets/hero-doula.jpg";
 
 const Hero = () => {
@@ -33,21 +34,20 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Button 
-              size="lg" 
-              variant="accent"
-              onClick={() => scrollToSection("contact")}
-            >
-              <Phone className="mr-2 h-5 w-5" />
-              Get Started
-            </Button>
+            <Link to="/payment">
+              <Button size="lg" variant="accent">
+                <Calendar className="mr-2 h-5 w-5" />
+                Book Now
+              </Button>
+            </Link>
             
             <Button 
               size="lg" 
               variant="outline"
-              onClick={() => scrollToSection("about")}
+              onClick={() => scrollToSection("contact")}
             >
-              Learn More
+              <Phone className="mr-2 h-5 w-5" />
+              Contact Me
             </Button>
           </div>
           

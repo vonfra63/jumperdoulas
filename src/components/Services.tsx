@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
-import { CheckCircle, XCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { CheckCircle, XCircle, Calendar } from "lucide-react";
 
 const Services = () => {
   const doServices = [
@@ -103,6 +105,12 @@ const Services = () => {
             <p className="text-muted-foreground">
               Contact me to discuss payment options and find the best plan for your family
             </p>
+            <Link to="/payment">
+              <Button size="lg" variant="accent" className="mt-4">
+                <Calendar className="mr-2 h-5 w-5" />
+                Book & Pay Online
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
