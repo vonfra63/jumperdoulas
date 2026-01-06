@@ -110,7 +110,7 @@ const Payment = () => {
                   <p className="text-muted-foreground">
                     Schedule your free meet & greet with me to discuss your needs and payment options.
                   </p>
-                  <Link to="/#contact">
+                  <Link to="/contact">
                     <Button size="lg" className="w-full">
                       Schedule Your Call
                     </Button>
