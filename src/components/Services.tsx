@@ -34,7 +34,7 @@ const Services = () => {
               Doula Services & Support
             </h2>
             <p className="text-xl text-muted-foreground font-serif italic max-w-2xl mx-auto">
-              Mental, physical, and emotional support throughout your journey
+              Mental, physical, and emotional support throughout your pregnancy journey
             </p>
           </div>
 
