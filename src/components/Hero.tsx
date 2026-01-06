@@ -41,14 +41,15 @@ const Hero = () => {
               </Button>
             </Link>
             
-            <Button 
-              size="lg" 
-              variant="outline"
-              onClick={() => scrollToSection("contact")}
-            >
-              <Phone className="mr-2 h-5 w-5" />
-              Contact Me
-            </Button>
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                variant="outline"
+              >
+                <Phone className="mr-2 h-5 w-5" />
+                Contact Me
+              </Button>
+            </Link>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8 text-sm">
