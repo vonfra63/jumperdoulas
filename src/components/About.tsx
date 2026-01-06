@@ -14,11 +14,14 @@ const About = () => {
                 Meet Yvonne Franklin
               </h2>
               <div className="flex justify-center">
-                <img 
-                  src={yvonnePhoto} 
-                  alt="Yvonne Franklin - Certified Professional Doula" 
-                  className="w-56 h-72 md:w-64 md:h-96 rounded-2xl object-cover shadow-lg border-4 border-secondary/30"
-                />
+                <div className="relative w-56 h-72 md:w-64 md:h-96">
+                  <img 
+                    src={yvonnePhoto} 
+                    alt="Yvonne Franklin - Certified Professional Doula" 
+                    className="w-full h-full rounded-2xl object-cover shadow-lg border-4 border-secondary/30 brightness-95 contrast-95 saturate-90"
+                  />
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-primary/10 via-transparent to-accent/15 pointer-events-none" />
+                </div>
               </div>
               <p className="text-xl text-muted-foreground font-serif italic">
                 Your compassionate doula companion
