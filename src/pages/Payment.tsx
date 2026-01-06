@@ -45,7 +45,7 @@ const Payment = () => {
 
           {/* Service Highlights */}
           <div className="mb-12">
-            <h2 className="text-2xl font-semibold text-foreground text-center mb-8">Why Choose My Doula Services?</h2>
+            <h2 className="text-2xl font-semibold text-foreground text-center mb-8">Why Choose Jumper Doula Services?</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {serviceHighlights.map((highlight, index) => (
                 <Card key={index} className="p-4 text-center border-primary/10 hover:border-primary/30 transition-colors">
