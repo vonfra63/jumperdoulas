@@ -40,7 +40,7 @@ const Payment = () => {
             <div className="w-16 h-16 mx-auto bg-primary/20 rounded-full flex items-center justify-center mb-4">
               <Heart className="h-8 w-8 text-primary" />
             </div>
-            <h1 className="text-4xl font-bold text-foreground mb-2">Request Your Doula Services</h1>
+            <h1 className="text-4xl font-bold text-foreground mb-2">Request Your Doula Services Today</h1>
           </div>
 
           {/* Service Highlights */}
