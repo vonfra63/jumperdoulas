@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, XCircle, Calendar } from "lucide-react";
+import diverseCoupleImage from "@/assets/diverse-couple-expecting.png";
+import familyHandsImage from "@/assets/family-hands-baby-feet.png";
 
 const Services = () => {
   const doServices = [
@@ -36,6 +38,18 @@ const Services = () => {
             <p className="text-xl text-muted-foreground font-serif italic max-w-2xl mx-auto">
               Mental, physical, and emotional support throughout your pregnancy journey
             </p>
+          </div>
+
+          {/* Diverse families feature image */}
+          <div className="flex justify-center mb-8">
+            <div className="relative w-full max-w-2xl rounded-2xl overflow-hidden shadow-soft">
+              <img 
+                src={diverseCoupleImage} 
+                alt="Expectant couple celebrating their pregnancy journey" 
+                className="w-full h-72 object-cover object-top brightness-95 contrast-95 saturate-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/15 via-transparent to-accent/10 pointer-events-none" />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -88,6 +102,18 @@ const Services = () => {
                 </p>
               </div>
             </Card>
+          </div>
+
+          {/* Family hands image - symbolizing community support */}
+          <div className="flex justify-center">
+            <div className="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-soft">
+              <img 
+                src={familyHandsImage} 
+                alt="Family hands cradling baby feet - symbol of community and support" 
+                className="w-full h-80 object-cover brightness-100 contrast-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-accent/15 via-transparent to-primary/10 pointer-events-none" />
+            </div>
           </div>
 
           {/* Payment Options */}

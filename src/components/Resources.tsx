@@ -1,5 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { BookOpen, Video } from "lucide-react";
+import newbornNursingImage from "@/assets/newborn-nursing.png";
+import motherBabyJoyImage from "@/assets/mother-baby-joy.png";
 
 const Resources = () => {
   const videos = [
@@ -83,6 +85,26 @@ const Resources = () => {
                   </a>
                 </Card>
               ))}
+            </div>
+          </div>
+
+          {/* Postpartum support images */}
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="relative rounded-2xl overflow-hidden shadow-soft">
+              <img 
+                src={newbornNursingImage} 
+                alt="Tender moment of newborn nursing - postpartum support" 
+                className="w-full h-56 object-cover brightness-95 contrast-95 saturate-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/15 via-transparent to-accent/10 pointer-events-none" />
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-soft">
+              <img 
+                src={motherBabyJoyImage} 
+                alt="Joyful moment between mother and baby" 
+                className="w-full h-56 object-cover brightness-95 contrast-95 saturate-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-accent/15 via-transparent to-primary/10 pointer-events-none" />
             </div>
           </div>
 
