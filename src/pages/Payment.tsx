@@ -106,9 +106,9 @@ const Payment = () => {
               
               <Card className="p-6">
                 <div className="text-center space-y-4">
-                  <h3 className="text-xl font-semibold text-foreground">Schedule Your Consultation</h3>
+                  <h3 className="text-xl font-semibold text-foreground">Schedule Your Consultation Now</h3>
                   <p className="text-muted-foreground">
-                    Schedule your free 30-minute discovery call to discuss your needs and payment options.
+                    Schedule your free meet & greet with me to discuss your needs and payment options.
                   </p>
                   <Link to="/#contact">
                     <Button size="lg" className="w-full">
