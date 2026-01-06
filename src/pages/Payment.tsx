@@ -62,7 +62,7 @@ const Payment = () => {
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Service Selection */}
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-foreground">Select a Service</h2>
+              <h2 className="text-2xl font-semibold text-foreground">Services Offered</h2>
               
               <div className="space-y-3">
                 {serviceOptions.map((service) => (
