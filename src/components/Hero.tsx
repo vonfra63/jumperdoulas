@@ -20,9 +20,9 @@ const Hero = () => {
         />
       </div>
       
-      {/* Stronger gradient overlay for better text contrast */}
-      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-primary/80 via-primary/60 to-accent/50" />
-      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-background/90 via-background/30 to-background/40" />
+      {/* Strong gradient overlay for maximum text readability */}
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-primary/90 via-primary/75 to-accent/65" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-background/95 via-background/50 to-background/60" />
       
       <div className="container mx-auto px-4 py-20 relative z-10 text-white">
         <div className="max-w-4xl mx-auto text-center space-y-8">
