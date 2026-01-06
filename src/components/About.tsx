@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Heart, Users, Award } from "lucide-react";
+import yvonnePhoto from "@/assets/yvonne-franklin.jpg";
 
 const About = () => {
   return (
@@ -12,6 +13,13 @@ const About = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-foreground">
                 Meet Yvonne Franklin
               </h2>
+              <div className="flex justify-center">
+                <img 
+                  src={yvonnePhoto} 
+                  alt="Yvonne Franklin - Certified Professional Doula" 
+                  className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-lg border-4 border-secondary/30"
+                />
+              </div>
               <p className="text-xl text-muted-foreground font-serif italic">
                 Your compassionate doula companion
               </p>
