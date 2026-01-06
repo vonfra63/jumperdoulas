@@ -63,7 +63,7 @@ const ContactPage = () => {
                 <Clock className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Quick Response</h3>
-              <p className="text-sm text-muted-foreground">I respond to all inquiries within 24 hours</p>
+              <p className="text-sm text-muted-foreground">I respond to all inquiries within 48 hours</p>
             </Card>
             <Card className="p-6 text-center border-primary/10 hover:border-primary/30 transition-colors">
               <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
@@ -115,7 +115,7 @@ const ContactPage = () => {
                       >
                         jumperdoulasvcs@gmail.com
                       </a>
-                      <p className="text-sm text-muted-foreground mt-1">I'll respond within 24 hours</p>
+                      <p className="text-sm text-muted-foreground mt-1">I'll respond within 48 hours</p>
                     </div>
                   </div>
 
@@ -243,7 +243,7 @@ const ContactPage = () => {
                   </Button>
 
                   <p className="text-xs text-center text-muted-foreground">
-                    I'll respond within 24 hours to schedule your free meet & greet!
+                    I'll respond within 48 hours to schedule your free meet & greet!
                   </p>
                 </form>
               </Card>
