@@ -5,10 +5,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Shield, Heart, Sparkles, Brain, HandHeart, Leaf, SmilePlus, HeartHandshake } from "lucide-react";
 
 const serviceOptions = [
-  { id: "birth", name: "Birth Doula Package", price: 0, description: "Complete prenatal, birth, and postpartum support" },
-  { id: "postpartum", name: "Postpartum Support", price: 0, description: "4 weeks of postpartum care and guidance" },
-  { id: "consultation", name: "Initial Consultation", price: 0, description: "Free 30-minute discovery call" },
-  { id: "deposit", name: "Service Deposit", price: 0, description: "Reserve your spot with a deposit" },
+  { id: "birth", name: "Birth Doula Package", description: "Complete prenatal, birth, and postpartum support" },
+  { id: "postpartum", name: "Postpartum Support", description: "4 weeks of postpartum care and guidance" },
+  { id: "consultation", name: "Initial Consultation", description: "Free meet & greet up to 60 minutes" },
 ];
 
 const serviceHighlights = [
@@ -84,9 +83,6 @@ const Payment = () => {
                         <h3 className="font-semibold text-foreground">{service.name}</h3>
                         <p className="text-sm text-muted-foreground">{service.description}</p>
                       </div>
-                      <span className="text-xl font-bold text-primary">
-                        {service.price === 0 ? "Free" : `$${service.price}`}
-                      </span>
                     </div>
                   </Card>
                 ))}
