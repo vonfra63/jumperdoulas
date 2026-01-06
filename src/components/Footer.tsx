@@ -1,8 +1,16 @@
+import type { MouseEvent } from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Heart } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const openExternal = (url: string) => (e: MouseEvent<HTMLAnchorElement>) => {
+    // In the in-editor preview (iframe), some sites like Facebook/Instagram block being opened in-frame.
+    // We force a real new tab to avoid the "can't connect" frame error.
+    e.preventDefault();
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <footer className="bg-foreground text-background py-12">
@@ -18,6 +26,7 @@ const Footer = () => {
               <div className="flex gap-4">
                 <a 
                   href="https://facebook.com/jumperfranklin" 
+                  onClick={openExternal("https://facebook.com/jumperfranklin")}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
@@ -27,6 +36,7 @@ const Footer = () => {
                 </a>
                 <a 
                   href="https://instagram.com/franklin.yvonne"
+                  onClick={openExternal("https://instagram.com/franklin.yvonne")}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
