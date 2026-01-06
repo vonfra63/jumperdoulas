@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Heart, Users, Award } from "lucide-react";
 import yvonnePhoto from "@/assets/yvonne-franklin.jpg";
+import coupleEmbraceImage from "@/assets/couple-embrace-pregnancy.png";
 
 const About = () => {
   return (
@@ -26,6 +27,18 @@ const About = () => {
               <p className="text-xl text-muted-foreground font-serif italic">
                 Your compassionate doula companion
               </p>
+            </div>
+
+            {/* Intimate pregnancy moment image */}
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-soft">
+                <img 
+                  src={coupleEmbraceImage} 
+                  alt="Couple embracing during pregnancy journey" 
+                  className="w-full h-64 object-cover brightness-95 contrast-95 saturate-90"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-accent/10 pointer-events-none" />
+              </div>
             </div>
             
             <div className="prose prose-lg max-w-4xl mx-auto text-foreground">
