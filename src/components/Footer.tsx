@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Heart } from "lucide-react";
 
 const Footer = () => {
@@ -55,6 +56,9 @@ const Footer = () => {
                 <a href="#contact" className="text-background/80 hover:text-background transition-smooth">
                   Contact
                 </a>
+                <Link to="/payment" className="text-background/80 hover:text-background transition-smooth">
+                  Book Now
+                </Link>
               </nav>
             </div>
 
