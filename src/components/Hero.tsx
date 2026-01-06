@@ -16,7 +16,7 @@ const Hero = () => {
         <img 
           src={heroImage} 
           alt="Expecting couple embracing their journey into parenthood" 
-          className="w-full h-full object-cover object-[center_70%]"
+          className="w-full h-full object-cover object-[center_80%]"
         />
       </div>
       
