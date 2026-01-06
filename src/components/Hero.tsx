@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Calendar } from "lucide-react";
-import heroImage from "@/assets/hero-doula.jpg";
+import heroImage from "@/assets/hero-maternity.png";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -10,26 +10,31 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center gradient-hero">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img 
           src={heroImage} 
-          alt="Gentle care for your journey into parenthood" 
-          className="w-full h-full object-cover opacity-20"
+          alt="Expecting couple embracing their journey into parenthood" 
+          className="w-full h-full object-cover object-center"
         />
       </div>
       
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      {/* Gradient overlay blending with signature teal/violet colors */}
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-primary/90 via-primary/70 to-accent/50" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-background/80 via-transparent to-background/40" />
+      
+      <div className="container mx-auto px-4 py-20 relative z-10 text-white">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight drop-shadow-lg">
             Jumper Doula Services LLC
           </h1>
           
-          <p className="text-2xl md:text-3xl text-muted-foreground font-serif italic">
+          <p className="text-2xl md:text-3xl font-serif italic opacity-90 drop-shadow-md">
             "Jumpstart your journey into parenthood"
           </p>
           
-          <p className="text-xl text-foreground max-w-2xl mx-auto">
+          <p className="text-xl max-w-2xl mx-auto opacity-90 drop-shadow-md">
             Caring, loving, supportive grandmother doula services in Denver, Colorado
           </p>
           
@@ -55,14 +60,14 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8 text-sm">
             <a 
               href="tel:+13039022830" 
-              className="flex items-center gap-2 text-foreground hover:text-accent transition-smooth"
+              className="flex items-center gap-2 hover:opacity-80 transition-smooth"
             >
               <Phone className="h-4 w-4" />
               (303) 902-2830
             </a>
             <a 
               href="mailto:jumperdoulasvcs@gmail.com" 
-              className="flex items-center gap-2 text-foreground hover:text-accent transition-smooth"
+              className="flex items-center gap-2 hover:opacity-80 transition-smooth"
             >
               <Mail className="h-4 w-4" />
               jumperdoulasvcs@gmail.com
