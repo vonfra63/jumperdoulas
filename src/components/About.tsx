@@ -28,18 +28,6 @@ const About = () => {
                 Your compassionate doula companion
               </p>
             </div>
-
-            {/* Intimate pregnancy moment image */}
-            <div className="flex justify-center">
-              <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-soft">
-                <img 
-                  src={coupleEmbraceImage} 
-                  alt="Couple embracing during pregnancy journey" 
-                  className="w-full h-64 object-cover brightness-95 contrast-95 saturate-90"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-accent/10 pointer-events-none" />
-              </div>
-            </div>
             
             <div className="prose prose-lg max-w-4xl mx-auto text-foreground">
               <p className="text-lg leading-relaxed">
@@ -57,6 +45,18 @@ const About = () => {
               <p className="text-lg leading-relaxed">
                 I have experienced several career changes throughout my life, but my passion for helping others remains constant. I am well versed in available resources and can seamlessly transition from being a leadership professional to a trusted friend. As a certified professional doula, I provide respectful, compassionate, and nonjudgemental care to individuals who may not have access to continuous birth support. I create a safe environment through trust and understanding, utilizing my knowledge and resources to address issues during my clients' pregnancies through active listening and effective communication with clients and their birth teams.
               </p>
+            </div>
+          </div>
+
+          {/* Intimate pregnancy moment image */}
+          <div className="flex justify-center">
+            <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-soft">
+              <img 
+                src={coupleEmbraceImage} 
+                alt="Couple embracing during pregnancy journey" 
+                className="w-full h-64 object-cover brightness-95 contrast-95 saturate-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-accent/10 pointer-events-none" />
             </div>
           </div>
 
