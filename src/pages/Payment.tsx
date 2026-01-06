@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Shield, Heart, Sparkles, Brain, HandHeart, Leaf, SmilePlus, HeartHandshake } from "lucide-react";
-import PaymentMethodSelector from "@/components/PaymentMethodSelector";
-import StripePaymentForm from "@/components/StripePaymentForm";
-import PayPalButton from "@/components/PayPalButton";
 
 const serviceOptions = [
   { id: "birth", name: "Birth Doula Package", price: 0, description: "Complete prenatal, birth, and postpartum support" },
@@ -25,7 +22,6 @@ const serviceHighlights = [
 
 const Payment = () => {
   const [selectedService, setSelectedService] = useState(serviceOptions[0]);
-  const [paymentMethod, setPaymentMethod] = useState<"stripe" | "paypal">("stripe");
 
   return (
     <div className="min-h-screen bg-background">
@@ -111,51 +107,28 @@ const Payment = () => {
               </Card>
             </div>
 
-            {/* Payment Form */}
+            {/* Contact Section */}
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-foreground">Payment Method</h2>
+              <h2 className="text-2xl font-semibold text-foreground">Ready to Get Started?</h2>
               
-              {selectedService.price === 0 ? (
-                <Card className="p-6">
-                  <div className="text-center space-y-4">
-                    <h3 className="text-xl font-semibold text-foreground">Free Consultation</h3>
-                    <p className="text-muted-foreground">
-                      Schedule your free 30-minute discovery call to discuss your needs.
-                    </p>
-                    <Link to="/#contact">
-                      <Button size="lg" className="w-full">
-                        Schedule Your Call
-                      </Button>
-                    </Link>
-                  </div>
-                </Card>
-              ) : (
-                <Card className="p-6 space-y-6">
-                  <PaymentMethodSelector
-                    selected={paymentMethod}
-                    onSelect={setPaymentMethod}
-                  />
-
-                  <div className="border-t border-border pt-6">
-                    {paymentMethod === "stripe" ? (
-                      <StripePaymentForm
-                        amount={selectedService.price}
-                        serviceName={selectedService.name}
-                      />
-                    ) : (
-                      <PayPalButton
-                        amount={selectedService.price}
-                        serviceName={selectedService.name}
-                      />
-                    )}
-                  </div>
-                </Card>
-              )}
+              <Card className="p-6">
+                <div className="text-center space-y-4">
+                  <h3 className="text-xl font-semibold text-foreground">Schedule Your Consultation</h3>
+                  <p className="text-muted-foreground">
+                    Schedule your free 30-minute discovery call to discuss your needs and payment options.
+                  </p>
+                  <Link to="/#contact">
+                    <Button size="lg" className="w-full">
+                      Schedule Your Call
+                    </Button>
+                  </Link>
+                </div>
+              </Card>
 
               {/* Security Badge */}
               <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                 <Shield className="h-4 w-4" />
-                <span>256-bit SSL encryption • Secure checkout</span>
+                <span>Your information is always kept secure</span>
               </div>
             </div>
           </div>
