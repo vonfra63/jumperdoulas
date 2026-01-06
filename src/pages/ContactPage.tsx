@@ -21,13 +21,24 @@ const ContactPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // In a real implementation, this would send to a backend
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you within 24 hours!",
-    });
+    // Build email body with form data
+    const subject = encodeURIComponent(`Doula Services Inquiry from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Phone: ${formData.phone}\n` +
+      `Due Date: ${formData.dueDate || 'Not provided'}\n` +
+      `Service Interest: ${formData.serviceInterest || 'Not specified'}\n\n` +
+      `Message:\n${formData.message}`
+    );
     
-    setFormData({ name: "", email: "", phone: "", dueDate: "", serviceInterest: "", message: "" });
+    // Open email client with pre-filled data
+    window.location.href = `mailto:jumperdoulasvcs@gmail.com?subject=${subject}&body=${body}`;
+    
+    toast({
+      title: "Opening Email Client",
+      description: "Your email app will open with the message. Just hit send!",
+    });
   };
 
   return (
