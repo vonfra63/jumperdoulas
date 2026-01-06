@@ -48,18 +48,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Intimate pregnancy moment image */}
-          <div className="flex justify-center">
-            <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-soft">
-              <img 
-                src={coupleEmbraceImage} 
-                alt="Couple embracing during pregnancy journey" 
-                className="w-full h-64 object-cover brightness-95 contrast-95 saturate-90"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-accent/10 pointer-events-none" />
-            </div>
-          </div>
-
           {/* Mission Statement */}
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-8 shadow-card space-y-4 text-center border-secondary/20">
@@ -91,6 +79,18 @@ const About = () => {
                 I use proven techniques and resources to enhance your birthing experience and reduce maternal health disparities
               </p>
             </Card>
+          </div>
+
+          {/* Intimate pregnancy moment image */}
+          <div className="flex justify-center">
+            <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-soft">
+              <img 
+                src={coupleEmbraceImage} 
+                alt="Couple embracing during pregnancy journey" 
+                className="w-full h-64 object-cover brightness-95 contrast-95 saturate-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-accent/10 pointer-events-none" />
+            </div>
           </div>
 
           {/* Mission */}
