@@ -21,8 +21,8 @@ const Hero = () => {
       </div>
       
       {/* Softer gradient overlay blending with signature teal/violet colors */}
-      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-primary/70 via-primary/40 to-accent/30" />
-      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-background/70 via-transparent to-background/20" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-primary/50 via-primary/25 to-accent/20" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-background/50 via-transparent to-background/10" />
       
       <div className="container mx-auto px-4 py-20 relative z-10 text-white">
         <div className="max-w-4xl mx-auto text-center space-y-8">
