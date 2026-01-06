@@ -17,7 +17,7 @@ const About = () => {
                 <img 
                   src={yvonnePhoto} 
                   alt="Yvonne Franklin - Certified Professional Doula" 
-                  className="w-64 h-72 md:w-80 md:h-96 rounded-2xl object-cover object-top shadow-lg border-4 border-secondary/30"
+                  className="w-64 md:w-80 rounded-2xl object-contain shadow-lg border-4 border-secondary/30"
                 />
               </div>
               <p className="text-xl text-muted-foreground font-serif italic">
