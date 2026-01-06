@@ -17,7 +17,7 @@ const Footer = () => {
               </p>
               <div className="flex gap-4">
                 <a 
-                  href="https://www.facebook.com/jumperfranklin?rdid=Qqirl6MpwqeL1z4G&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14WnHp9AuYZ%2F" 
+                  href="https://facebook.com/jumperfranklin" 
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
@@ -26,7 +26,7 @@ const Footer = () => {
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a 
-                  href="https://www.instagram.com/franklin.yvonne/" 
+                  href="https://instagram.com/franklin.yvonne"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
