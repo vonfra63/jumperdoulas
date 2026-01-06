@@ -46,7 +46,7 @@ const Services = () => {
               <img 
                 src={diverseCoupleImage} 
                 alt="Expectant couple celebrating their pregnancy journey" 
-                className="w-full h-72 object-cover object-top brightness-95 contrast-95 saturate-90"
+                className="w-full h-72 object-cover object-[center_70%] brightness-95 contrast-95 saturate-90"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/15 via-transparent to-accent/10 pointer-events-none" />
             </div>
