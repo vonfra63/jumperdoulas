@@ -49,7 +49,7 @@ const Hero = () => {
             <Link to="/contact">
               <Button 
                 size="lg" 
-                variant="outline"
+                variant="accent"
               >
                 <Phone className="mr-2 h-5 w-5" />
                 Contact Me
