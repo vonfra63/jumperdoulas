@@ -99,7 +99,7 @@ const ContactPage = () => {
                       >
                         (303) 902-2830
                       </a>
-                      <p className="text-sm text-muted-foreground mt-1">Call or text anytime</p>
+                      <p className="text-sm text-muted-foreground mt-1">Monday to Friday 9:00-17:00</p>
                     </div>
                   </div>
 
