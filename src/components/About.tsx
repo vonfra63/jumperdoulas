@@ -31,11 +31,11 @@ const About = () => {
             
             <div className="prose prose-lg max-w-4xl mx-auto text-foreground">
               <p className="text-lg leading-relaxed">
-                I am a wife, mother, grandmother, aunt, and sister, born and raised in Denver, Colorado. I adopted my nephew and, thirty years later, gained temporary custody of my great-nephew. I have had a lifelong infatuation with children, which began when I was just a child myself. At the age of 14, I was honored to become a godmother for the first time. Throughout my life, I have been the matriarch of my family.
+               I am a wife, mother of 3, grandmother of 10, aunt, and sister, born and raised in Denver, Colorado. I adopted my nephew and, thirty years later, gained temporary custody of my great-nephew. I have had a lifelong infatuation with children, which began when I was just a child myself. At the age of 14, I was honored to become a godmother for the first time. Throughout my life, I have been the matriarch of my family.
               </p>
               
               <p className="text-lg leading-relaxed">
-                I am outgoing, fun-loving, honest, trustworthy, and spiritual. I enjoy life and possess a wealth of wisdom, expertise, and a strong desire to learn. This eagerness will undoubtedly enhance my work as a doula. Since childhood, I have felt a deep need to protect and love babies. Whenever there is a need, I am there to lend a helping hand.
+               I am outgoing, fun-loving, honest, trustworthy, and spiritual. I enjoy life and possess a wealth of wisdom, expertise, and a strong desire to learn. This eagerness will undoubtedly enhance my work as a doula. Since childhood, I have felt a deep need to protect and love babies. Whenever there is a need, I am there to lend a helping hand.
               </p>
               
               <p className="text-lg leading-relaxed">
